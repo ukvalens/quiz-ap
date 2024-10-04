@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.2/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="app">
+        <h1>Quiz Test</h1>
+        <div class="upload-section">
+            <input type="file" id="file-input" accept=".xlsx" />
+            <button id="upload-button">Upload Questions</button>
+        </div>
+        <div class="quiz">
+            <h2 id="question" style="display:none;"></h2> <!-- Initially hidden -->
+            <div id="answer-buttons">
+                
+            </div>
+            <button id="next-btn" style="display:none;">Next</button> <!-- Initially hidden -->
+        </div>
+        <div class="scoreboard">
+            <h3 id="player-name">Player: <span id="name-display">Anonymous</span></h3>
+            <h3 id="score-display">Score: <span id="score-count">0</span></h3>
+            <a id="download-report" style="display: none;" href="#" download="quiz_report.txt">Download Report</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
